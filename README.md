@@ -2,7 +2,7 @@
 
 A comprehensive machine learning system for detecting fraudulent credit card transactions using ensemble methods and advanced data preprocessing techniques.
 
-## 📊 Project Overview
+## Project Overview
 
 This project develops a production-ready fraud detection system that analyzes 6.36 million credit card transactions to identify fraudulent patterns. Using state-of-the-art machine learning techniques including SMOTE for class imbalance handling and ensemble methods (Random Forest, XGBoost), we achieved **98% fraud detection recall** while reducing false positives by **91.6%** compared to baseline approaches.
 
@@ -14,7 +14,7 @@ This project develops a production-ready fraud detection system that analyzes 6.
 - **F1-Score:** 0.5634
 - **ROC-AUC:** 0.9993
 
-## 🎯 Business Problem
+## Business Problem
 
 Financial fraud costs the global economy over $32 billion annually. This project addresses the challenge of:
 - Detecting fraudulent transactions in real-time
@@ -22,7 +22,7 @@ Financial fraud costs the global economy over $32 billion annually. This project
 - Balancing operational efficiency with fraud prevention
 - Handling severely imbalanced datasets (1:774 fraud-to-legitimate ratio)
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 fraud-detection/
@@ -35,7 +35,7 @@ fraud-detection/
     └── creditcard.csv                           # Dataset (must be downloaded)
 ```
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -75,7 +75,7 @@ xgboost>=1.5.0
 jupyter>=1.0.0
 ```
 
-## 📥 Dataset Setup
+## Dataset Setup
 
 **IMPORTANT:** The dataset is not included in this repository due to its size. Follow these steps:
 
@@ -113,7 +113,7 @@ df = pd.read_csv('creditcard.csv')
 df = pd.read_csv('data/creditcard.csv')
 ```
 
-## 🎮 Running the Project
+## Running the Project
 
 ### Option 1: Run All Cells
 
@@ -145,7 +145,7 @@ The notebook will generate:
 - Feature importance plots
 - ROC curves
 
-## 📊 Dataset Description
+## Dataset Description
 
 ### Overview
 
@@ -167,7 +167,7 @@ The notebook will generate:
 | `newbalanceDest` | Numeric | Destination account balance after transaction |
 | `isFraud` | Binary | Target variable (0 = legitimate, 1 = fraud) |
 
-## 🧪 Methodology
+## Methodology
 
 ### 1. Data Preprocessing
 
@@ -206,7 +206,7 @@ The notebook will generate:
 - **ROC-AUC:** Overall discrimination capability
 - **FP-FN Balance:** Difference between false positives and false negatives
 
-## 📈 Results Summary
+## Results Summary
 
 ### Model Comparison
 
@@ -225,7 +225,7 @@ The notebook will generate:
 3. **PCA Not Recommended:** Severe performance degradation (recall dropped to 34.5%)
 4. **Threshold Optimization:** Achieved 98% better FP-FN balance
 
-## 💡 Production Recommendations
+## Production Recommendations
 
 ### Recommended Model: Random Forest
 
@@ -265,7 +265,7 @@ The notebook will generate:
 **Tier 4 - Allow:** Probability < 0.50
 - Transaction proceeds normally
 
-## 🔧 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -293,13 +293,13 @@ pip install imbalanced-learn xgboost
 **4. Kernel crashes during Random Forest training**
 **Solution:** Reduce `n_estimators` from 100 to 50 in the Random Forest configuration.
 
-## 📚 Documentation
+## Documentation
 
 For detailed methodology, mathematical formulations, and business analysis, see:
 - **Technical Report:** `fraud_detection_report.pdf`
 - **Scientific References:** Listed in the report bibliography
 
-## 🤝 Contributing
+## Contributing
 
 This is an academic project for educational purposes. If you'd like to extend it:
 
@@ -309,11 +309,11 @@ This is an academic project for educational purposes. If you'd like to extend it
 4. Push to the branch (`git push origin feature/improvement`)
 5. Open a Pull Request
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## 👥 Authors
+## Authors
 
 - **Balliste** - Engineering Program
 - **Leonelli** - Engineering Program
@@ -322,19 +322,19 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 **Institution:** Engineering School  
 **Date:** December 2024
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Dataset provided by Kaggle's PaySim synthetic financial dataset
 - Scikit-learn and imbalanced-learn libraries
 - Course instructors for guidance and feedback
 
-## 📞 Contact
+## Contact
 
 For questions or issues:
 - Open an issue on GitHub
 - Email: [your.email@example.com]
 
-## 🔗 References
+## References
 
 - [Original Dataset - Kaggle](https://www.kaggle.com/datasets/ealaxi/paysim1)
 - [SMOTE Paper](https://arxiv.org/abs/1106.1813)
@@ -343,6 +343,6 @@ For questions or issues:
 
 ---
 
-⭐ **Star this repository if you found it helpful!**
+**Star this repository if you found it helpful!**
 
 Last updated: December 2024
